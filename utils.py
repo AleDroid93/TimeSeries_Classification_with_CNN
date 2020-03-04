@@ -1,5 +1,6 @@
 import numpy as np
 from constants import N_TIMESTAMPS
+
 def reshapeToTensor(x):
     new_data = []
     for row in x:
