@@ -10,18 +10,12 @@ from train import train
 
 for i in range(N_FOLDS):
     current_fold = str(i + 1)
-    train_fn = BASE_DIR_FOLDS + current_fold + "/" + BASE_FILE_NAMES[
-        0] + current_fold + EXTENSION
-    validation_fn = BASE_DIR_FOLDS + current_fold + "/" + BASE_FILE_NAMES[
-        1] + current_fold + EXTENSION
-    test_fn = BASE_DIR_FOLDS + current_fold + "/" + BASE_FILE_NAMES[
-        2] + current_fold + EXTENSION
-    target_train_fn = BASE_DIR_FOLDS + current_fold + "/" + BASE_FILE_NAMES[
-        3] + current_fold + EXTENSION
-    target_validation_fn = BASE_DIR_FOLDS + current_fold + "/" + BASE_FILE_NAMES[
-        4] + current_fold + EXTENSION
-    target_test_fn = BASE_DIR_FOLDS + current_fold + "/" + BASE_FILE_NAMES[
-        5] + current_fold + EXTENSION
+    train_fn = '[YOUR TRAIN DATA FILE PATH HERE]'
+    validation_fn = '[YOUR VALIDATION DATA FILE PATH HERE]'
+    test_fn = '[YOUR TEST DATA FILE PATH HERE]'
+    target_train_fn = '[YOUR TRAIN LABELS FILE PATH HERE]'
+    target_validation_fn = '[YOUR VALIDATION LABELS FILE PATH HERE]'
+    target_test_fn = '[YOUR TEST LABELS FILE PATH HERE]'
 
     # loading the data already splitted
     x_train = np.load(train_fn)
